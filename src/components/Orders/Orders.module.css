@@ -2,6 +2,6 @@
     margin:6rem auto;
 
 }
-.orders ul{
-    list-style: none;
+.orders table{
+    width: 100%;
 }
