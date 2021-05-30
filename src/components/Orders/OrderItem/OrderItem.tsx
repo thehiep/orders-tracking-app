@@ -15,10 +15,9 @@ const OrderItem: React.FC<Order> = (props) => {
         <td>{props.merchantName}</td>
         <td>{props.merchantAddress}</td>
         <td>
-            <p>dishes:</p>
-            {props.dishes.map(item => <OrderItemDetail name={item.name} price={item.price} />)}
+            {props.dishes.map(item => <OrderItemDetail key={item.name} name={item.name} price={item.price} />)}
         </td>
-        <td>{props.totalPrice}</td>
+        <td>${props.totalPrice}</td>
         <td>{props.updatedTime.toDateString()}</td>
     </tr>
 

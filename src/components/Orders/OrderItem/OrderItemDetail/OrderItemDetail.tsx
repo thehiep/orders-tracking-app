@@ -4,8 +4,7 @@ import classes from './OrderItemDetail.module.css';
 
 const orderItemDetail: React.FC<Dish> = (props) => {
     return (<div className='order-item-detail'>
-        <p>name: {props.name}</p>
-        <p>price: {props.price}</p>
+        <p>- {props.name} - ${props.price}</p>
     </div>)
 }
 

@@ -4,6 +4,7 @@ class Pagination {
     constructor(totalItems: number) {
         this.totalItems = totalItems;
     }
+    visible=true;
 
 }
 

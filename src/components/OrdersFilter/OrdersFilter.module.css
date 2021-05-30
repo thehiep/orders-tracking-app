@@ -1,0 +1,26 @@
+.orders-filter{
+    padding: 1rem 2rem;
+    background-color:rgb(166, 180, 209);
+}
+.orders-filter__control{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+.orders-filter .orders-filter__control label{
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+.orders-filter .orders-filter__control input,
+.orders-filter .orders-filter__control select
+{
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    border-radius: 5px solid #ccc;
+    justify-content: center;
+}

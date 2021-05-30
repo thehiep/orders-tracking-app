@@ -6,8 +6,12 @@ const pagination: React.FC<Pagination> = (props) => {
     const links = [];
 
     for (let i = 1; i < numberPage + 1; i++) {
-        links.push(<a className={classes.active} href="#">{i}</a>);
+        links.push(<a className={classes.active} href="#" key={i}>{i}</a>);
     }
+    if (!props.visible) {
+        return null;
+    }
+
     return <Fragment>
         <div className={classes.pagination}>
             <a href="#">&laquo;</a>
